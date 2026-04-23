@@ -18,3 +18,5 @@ chmod $USUARI /home/$USUARI/.ssh rw------
 
 udo usermod -aG $USUARI /home/$USUARI/.ssh/authorized_keys/alumnes
 
+#!/bin/bash
+echo "Hola!"
