@@ -14,3 +14,16 @@ then
  echo "USAGE: ${0} USER_NAME [USER_NAME] ..."
  exit 1
 fi
+
+#${*} mostra el conjunt de paràmetres en una sola paraula "${1} ${2}.....${n}"
+echo "${*}"
+echo
+#${@} mostra el conjunt de paràmetres en paraules diferents "${1}" "${2}" ..... "${n}"
+echo "${@}"
+
+#estructura de control FOR per interar els paràmetres
+for USER_NAME in "${@}"
+do
+ PASSWORD=$(date +%s%N | sha256sum | head -c10)
+ echo "${USER_NAME}:${PASSWORD}"
+done
