@@ -29,8 +29,7 @@ do
 done
 
 X=1
-while [[ ${X} -eq 1 ]]
+while [[ true ]]
 do
- echo "executa while"
- X=7
+ echo "${RANDOM}"
 done
