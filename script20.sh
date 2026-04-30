@@ -22,7 +22,7 @@ echo
 echo "${@}"
 
 #estructura de control FOR per interar els paràmetres
-for USER_NAME in "${@}"
+for USER_NAME in "${*}"
 do
  PASSWORD=$(date +%s%N | sha256sum | head -c10)
  echo "${USER_NAME}:${PASSWORD}"
