@@ -32,4 +32,5 @@ X=1
 while [[ true ]]
 do
  echo "${RANDOM}"
+ sleep 1s
 done
