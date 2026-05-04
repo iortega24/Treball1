@@ -7,5 +7,14 @@
 
 if [[ "${1}" = "start" ]]
 then
- echo "starting...."
+ echo "Starting...."
+elif [[ "${1}" = "stop" ]]
+then
+ echo "Stopping...."
+elif [[ "${1}" = "status" ]]
+then
+ echo "The status is...."
+else
+ echo "Enter a valid option...."
+  
  fi
