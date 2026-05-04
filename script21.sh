@@ -34,6 +34,7 @@ while [[ ${#} -ge 1 ]]
 do
  #${1} indica el paràmetre en primera posició
  USER_NAME=${1}
-  PASSWORD=$(date +%s%N | sha256sum | head -c10)
-echo "${USER_NAME}:${PASSWORD}"
+ PASSWORD=$(date +%s%N | sha256sum | head -c10)
+ echo "${USER_NAME}:${PASSWORD}"
+ shift
 done
