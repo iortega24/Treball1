@@ -24,4 +24,13 @@ case "${1}" in
     start)
     echo "starting..."
     ;;
+    stop)
+    echo "stopping..."
+    ;;
+    status)
+    echo "The status is..."
+    ;;
+    *)
+    echo "Enter a valid option..."
+    ;; 
 esac
