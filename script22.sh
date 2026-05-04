@@ -21,7 +21,7 @@
 
 #ho farem amb CASE
 case "${1}" in
-    start)
+    start|s|--start|starting)
     echo "starting..."
     ;;
     stop)
